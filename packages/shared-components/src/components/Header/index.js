@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+import List from './List';
 
 export default class Header extends Component {
 
@@ -11,7 +13,7 @@ export default class Header extends Component {
 
   render() {
     return (
-      <div>HELLO WORLD</div>
+      <List>HELLO WORLDS</List>
     );
   }
 }
