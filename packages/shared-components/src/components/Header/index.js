@@ -1,19 +1,13 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import List from './List';
+import React from 'react';
+import MainContainer from './MainContainer';
+import Text from './Text';
 
-export default class Header extends Component {
-
-  // static propTypes = {
-  //   name: PropTypes.string.isRequired,
-  //   newWifiActive: PropTypes.func.isRequired,
-  //   newBluetoothActive: PropTypes.func.isRequired,
-  //   index: PropTypes.number.isRequired,
-  // }
-
-  render() {
-    return (
-      <List>HELLO WORLDS</List>
-    );
-  }
+export default () => {
+  return (
+    <MainContainer>
+      <Text>
+        THIS IS THE HEADER COMPONENT
+      </Text>
+    </MainContainer>
+  );
 }
