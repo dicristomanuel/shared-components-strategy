@@ -7,7 +7,9 @@
     "watch": "babel src --watch --presets babel-preset-es2015 --out-dir lib",
     "start": "npm run watch | watchify ./example/index.js -v -t babelify -o ./example/bundle.js",
     "test": "mocha",
-    "debug-test": "mocha debug test/test.js -R spec"
+    "debug-test": "mocha debug test/test.js -R spec",
+    "build": "babel src --presets babel-preset-es2015 --out-dir lib",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",

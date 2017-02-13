@@ -1,11 +1,15 @@
 import React from 'react';
 import MainContainer from './MainContainer';
-import Text from './Text';
+import Text from '../shared/Text.js';
 
 export default () => {
   return (
     <MainContainer>
-      <Text>
+      <Text
+        fontSize={30}
+        fontWeight={'bold'}
+        color={'gray'}
+      >
         THIS IS THE HEADER COMPONENT
       </Text>
     </MainContainer>
