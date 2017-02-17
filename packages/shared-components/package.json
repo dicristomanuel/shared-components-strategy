@@ -1,11 +1,11 @@
 {
   "name": "rs-shared-components",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
     "watch": "babel src --watch --presets babel-preset-es2015 --out-dir lib",
-    "start": "npm run watch | watchify ./example/index.js -v -t babelify -o ./example/bundle.js",
+    "start": "npm run watch | watchify ./example/index.js -v -t babelify -o ./example/bundle.js | open ./example/index.html",
     "test": "mocha",
     "debug-test": "mocha debug test/test.js -R spec",
     "build": "babel src --presets babel-preset-es2015 --out-dir lib",
