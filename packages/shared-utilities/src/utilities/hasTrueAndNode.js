@@ -3,5 +3,5 @@ import currentEnv from './shared/currentEnv';
 
 
 export default (array) => {
-  return _.includes(array, true) && currentEnv();
+  return _.includes(array, true) && currentEnv() === 'node';
 }
